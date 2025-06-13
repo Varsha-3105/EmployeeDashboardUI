@@ -533,7 +533,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // New helper method for building a single task detail card
+  //building a single task detail card
   Widget _buildTaskDetailCard(Map<String, dynamic> task) {
     Color getStatusColor(String status) {
       switch (status) {
@@ -581,7 +581,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.green, // Adjust color as needed based on design
+                  color: Colors.green, 
                 ),
               ),
               Text(
@@ -710,7 +710,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // New helper method for My Tasks tab
+  //  method for My Tasks tab
   Widget _buildMyTaskCard(Map<String, dynamic> task) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 5),
@@ -769,7 +769,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // Helper for status indicators
+  //  status indicators
   Widget _buildStatusIndicator(String label, Color color, bool isSelected) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5),
@@ -791,7 +791,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // Helper for priority options
+  //  priority options
   Widget _buildPriorityOption(String label, Color color, bool isSelected) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5),
@@ -828,7 +828,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
             ),
             child: Icon(
               icon,
-              color: Colors.blue, // Using blue for consistency, can be dynamic
+              color: Colors.blue, 
               size: 28,
             ),
           ),
@@ -869,7 +869,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // New helper method for Ongoing & Pending Tasks tab
+  // method for Ongoing & Pending Tasks tab
   Widget _buildOngoingTaskCard(Map<String, dynamic> task) {
     Color getStatusColor(String status) {
       switch (status) {
@@ -1002,7 +1002,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // New helper method for Work Summary tab
+  // method for Work Summary tab
   Widget _buildWorkSummaryCard() {
     return GridView.count(
       crossAxisCount: 2,
@@ -1021,7 +1021,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
     );
   }
 
-  // Helper for individual work summary item
+  //  for individual work summary item
   Widget _buildWorkSummaryItem(IconData icon, String label, String value) {
     return Container(
       padding: const EdgeInsets.all(15),
@@ -1041,7 +1041,7 @@ class _EmployeeDashboardScreenState extends State<EmployeeDashboardScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(icon, size: 24, color: Colors.blueAccent),
-          const SizedBox(width: 10), // Add spacing between icon and text
+          const SizedBox(width: 10), 
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
