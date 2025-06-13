@@ -1,2 +1,2 @@
 # EmployeeDashboardUI
-Design EmployeeDashboardUIScreen using flutter
+EmployeeDashboardUIScreen using flutter
